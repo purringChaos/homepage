@@ -9,6 +9,7 @@ My pronouns are It/Its and Rawr/Rawrz
 My favorite programming language to use is Zig.
 
 [My current music playlist (YouTube)](https://www.youtube.com/playlist?list=PLQ-CjWpxgt21v1mhI6CDNM_E4_ttun-rS)
+
 [My current music playlist (Spotify)](https://open.spotify.com/playlist/4fa8ojSGz5fOAxMp0uRs1s)
 
 ## Contact Me
