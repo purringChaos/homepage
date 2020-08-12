@@ -1,0 +1,39 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "Kit's Homepage",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purringChaos/homepage.git"
+  },
+  "author": "Kitteh",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-sass": "latest",
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "babel-loader": "latest",
+    "browser-sync": "latest",
+    "cheerio": "latest",
+    "cssnano": "latest",
+    "del": "latest",
+    "ejs": "latest",
+    "ejs-lint": "latest",
+    "front-matter": "latest",
+    "gulp-postcss": "latest",
+    "highlight.js": "latest",
+    "inline-source": "latest",
+    "markdown-it": "latest",
+    "markdown-it-attrs": "latest",
+    "markdown-it-container": "latest",
+    "markdown-it-html5-media": "latest",
+    "memory-fs": "latest",
+    "merge-options": "latest",
+    "postcss-extend": "latest",
+    "postcss-import": "latest",
+    "postcss-preset-env": "latest",
+    "postcss-url": "latest",
+    "webpack": "latest",
+    "yargs-parser": "latest"
+  }
+}
