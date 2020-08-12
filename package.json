@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/purringChaos/homepage.git"
   },
+  "scripts": {
+    "build": "NODE_ENV=production gulp"
+  },
   "author": "Kitteh",
   "devDependencies": {
     "gulp": "latest",
