@@ -1,4 +1,4 @@
-const zume = require('./zume').create({dest: "output"});
+const zume = require('./zume').create({dest: "docs"});
 const gulp = zume.gulp();
 
 gulp.task('clear', () => zume.clear());
