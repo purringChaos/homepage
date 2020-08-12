@@ -1,7 +1,7 @@
-@use "3rdparty/normalize.css";
-@use "3rdparty/hljs-nord/nord.scss";
+@import "3rdparty/normalize.scss";
+@import "3rdparty/hljs-nord/nord.scss";
 
+@import "modules/body.scss";
+@import "modules/headings.scss";
+@import "modules/links.scss";
 
-h1 {
-    color: #ff0000;
-}

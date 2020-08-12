@@ -9,6 +9,7 @@
   "author": "Kitteh",
   "devDependencies": {
     "gulp": "latest",
+    "sass": "latest",
     "gulp-sass": "latest",
     "@babel/core": "latest",
     "@babel/preset-env": "latest",

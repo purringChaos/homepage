@@ -1,0 +1,17 @@
+body {
+    background: #ffffff;
+    color: #24292e;
+}
+
+.content-container {
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+    margin-top: 32px !important;
+    margin-bottom: 32px !important;
+}
+.content-container > :first-child {
+    margin-top: 0 !important;
+}
