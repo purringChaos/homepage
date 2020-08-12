@@ -1,5 +1,4 @@
 @use "css/3rdparty/normalize.css";
 @use "css/3rdparty/hljs-nord/nord.scss";
 h1 {
-  color: #ff0000; 
-}
+  color: #ff0000; }
