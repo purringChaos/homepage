@@ -6,11 +6,11 @@ gulp.task('clear', () => zume.clear());
 gulp.task('html', () => 
     zume.html()
         .frontMatter()
+        .ejsmd()
         .markdown()
         .permalink()
-        .navigation()
         .ejs()
-        .urls()
+        //.urls()
         .inline({dest: true})
         .dest()
 );

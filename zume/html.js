@@ -23,6 +23,9 @@ class HtmlFork extends TaskFork {
     permalink(options) {
         return this.exec('permalink', options);
     }
+    ejsmd(options = {}) {
+        return this.exec('ejsmd', options);
+    }
 
     ejs(options = {}) {
         return this.exec('ejs', options);
@@ -83,6 +86,14 @@ class Html extends Task {
         this.watch.push(this.zume.src('templates/**/*.ejs'));
 
         return this.pipe(require('./plugins/ejs')(options));
+    }
+
+    ejsmd(options = {}) {
+        options.root = this.zume.src('templates');
+        options.locals = options.locals || {};
+        options.locals.zume = this.zume;
+
+        return this.pipe(require('./plugins/ejsmd')(options));
     }
 
     urls(options = {}) {

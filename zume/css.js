@@ -8,9 +8,6 @@ const defaults = {
 };
 
 class CssFork extends TaskFork {
-    postcss(options) {
-        return this.exec('postcss', options);
-    }
     sass(options) {
         return this.exec('sass', options);
     }
@@ -29,13 +26,6 @@ class Css extends Task {
     add(options = {}) {
         options.incremental = false;
         return new CssFork(this.zume.css(options), this);
-    }
-
-    postcss(options) {
-        options = options || {};
-        options.zume = this.zume;
-
-        return this.pipe(require('./plugins/postcss')(options));
     }
     sass(options) {
         options = options || {};

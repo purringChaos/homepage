@@ -2,7 +2,7 @@ const { Transform } = require('stream');
 const path = require('path');
 const merge = require('merge-options');
 const defaults = {
-    pretty: true
+    pretty: false
 };
 
 module.exports = function(options = {}) {

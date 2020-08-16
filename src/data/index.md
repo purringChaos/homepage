@@ -22,10 +22,7 @@ These are in order of whats the most convenient for me.
 
 - Telegram: [@purringChaos](https://t.me/purringChaos)
 - Discord: purringChaos#7398
-- Fediverse: <a href="https://is-a.owo.monster/@purringChaos">@purringChaos@is-a.owo.monster</a></li>
-- Email: <a href="me@kitteh.pw">me@kitteh.pw</a></li>
+- Fediverse: [@purringChaos@is-a.owo.monster](https://is-a.owo.monster/@purringChaos">@purringChaos@is-a.owo.monster)
+- Email: [me@kitteh.pw](mailto:me@kitteh.pw)
 
 
-```py
-print("owo!")
-```
