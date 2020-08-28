@@ -21,6 +21,7 @@ My favorite programming language to use is Zig.
 These are in order of whats the most convenient for me.
 
 - Telegram: [@purringChaos](https://t.me/purringChaos)
+- Twitter: [@purringChaos](https://twitter.com/purringChaos)
 - Discord: purringChaos#7398
 - Fediverse: [@purringChaos@is-a.owo.monster](https://is-a.owo.monster/@purringChaos">@purringChaos@is-a.owo.monster)
 - Email: [me@kitteh.pw](mailto:me@kitteh.pw)
