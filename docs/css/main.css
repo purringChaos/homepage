@@ -561,3 +561,22 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: #5e81ac; }
+
+.gender {
+  padding: 10px 20px 20px;
+  display: flex; }
+
+.gender_image {
+  margin-right: 10px;
+  max-width: 250px;
+  object-fit: contain;
+  align-self: flex-start; }
+
+.gender_text {
+  flex: 1 1 auto;
+  /*p {
+        margin-top: 5px; 
+    }*/ }
+  .gender_text h1, .gender_text h2, .gender_text h3, .gender_text h4, .gender_text h5, .gender_text h6 {
+    margin-top: 0px;
+    margin-bottom: 0px; }
