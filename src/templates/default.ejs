@@ -21,6 +21,19 @@
     </div>
 
 
+<script type="text/javascript">
+  function open_cw(cw)
+  {
+      console.log(cw);
+      //if (cw.attributes["aria-expanded"].value == false) {
+        cw.classList = "";
+        cw.children[1].classList = "cw_content_shown";
+        cw.children[1].attributes["aria-hidden"].value = false;
+        cw.attributes["aria-expanded"].value = true;
+        cw.attributes["aria-label"].value = "Opened: " + cw.attributes["aria-label"].value;
+        cw.removeChild(cw.children[0])
+    //}
+  }
+</script>
 </body>
-
 </html>

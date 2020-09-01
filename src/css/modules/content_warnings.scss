@@ -1,0 +1,17 @@
+.cw_hidden {
+  background: black;
+}
+.cw_text {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  color: #ffffff;
+  background-color: black;
+}
+
+.cw_content_hidden {
+    cursor: pointer;
+    pointer-events: none;
+    display: none;
+}
+

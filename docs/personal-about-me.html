@@ -20,12 +20,26 @@
     <h1>A more personal about page.</h1>
 <br>
 <h2>Genders</h2>
+<br>
+<span class="cw_hidden" role="checkbox" onclick="open_cw(this)" aria-label="Content Warning: eyestrain (click to open, requires javascript)" aria-expanded="false">
+<span class="cw_text">Content Warning: eyestrain (click to open)</span>
+<div class="cw_content_hidden" aria-hidden=true>
+<div class="gender">
+<img class="gender_image" alt="A flag with cyan stripes on top and bottom, rainbow stars overlayed on the cyan stripes. Vertical blocks making rainbow gradients with sparkles inbetween the cyan stripes. A glittery strip inbetween them. A white stripe in the center. A Yellow, Cyan and Magenta circle overlapping eachover to mix to the colours Green, Blue, Red and Black." src="img/gender_flags/cringewild.jpg">
+<div class="gender_text">
+<h2>CringeWild</h2>
+<p>Where your gender is like, so many combined feelings, colours, aesthetics that it’s just pure cringy excitement energy.</p>
+<p><a href="https://twitter.com/kagaminecore/status/1300156483716419586">Info / Credit</a></p>
+</div>
+</div>
+</div>
+</span>
 <div class="gender">
 <img class="gender_image" alt="A flag with the colours: light blue, pink, yellow and blueish purple." src="img/gender_flags/gndgender.jpg">
 <div class="gender_text">
 <h2>GNDgender</h2>
 <p>A gender where your gender is simply just connected to gender. No specific gender, it’s just. Gender. the Gender is there, and you can feel it but you can’t see or understand it. There is just a vague presence of the concept of gender Somewhere.</p>
-<p><a href="https://twitter.com/rabbitdeku/status/1299885784691093510/photo/1">Info / Credit</a></p>
+<p><a href="https://twitter.com/rabbitdeku/status/1299885784691093510">Info / Credit</a></p>
 </div>
 </div>
 <div class="gender">
@@ -112,6 +126,19 @@
     </div>
 
 
+<script type="text/javascript">
+  function open_cw(cw)
+  {
+      console.log(cw);
+      //if (cw.attributes["aria-expanded"].value == false) {
+        cw.classList = "";
+        cw.children[1].classList = "cw_content_shown";
+        cw.children[1].attributes["aria-hidden"].value = false;
+        cw.attributes["aria-expanded"].value = true;
+        cw.attributes["aria-label"].value = "Opened: " + cw.attributes["aria-label"].value;
+        cw.removeChild(cw.children[0])
+    //}
+  }
+</script>
 </body>
-
 </html>

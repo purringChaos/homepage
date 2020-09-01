@@ -9,19 +9,28 @@ template: default.ejs
 
 ## Genders
 
+<br>
+
 <?
 genders = [
+  {
+    "name": "CringeWild",
+    "description": "Where your gender is like, so many combined feelings, colours, aesthetics that it's just pure cringy excitement energy.",
+    "alt": "A flag with cyan stripes on top and bottom, rainbow stars overlayed on the cyan stripes. Vertical blocks making rainbow gradients with sparkles inbetween the cyan stripes. A glittery strip inbetween them. A white stripe in the center. A Yellow, Cyan and Magenta circle overlapping eachover to mix to the colours Green, Blue, Red and Black.",
+    "credit": "https://twitter.com/kagaminecore/status/1300156483716419586",
+    "cw": "eyestrain"
+  },
   {
     "name": "GNDgender",
     "description": "A gender where your gender is simply just connected to gender. No specific gender, it's just. Gender. the Gender is there, and you can feel it but you can't see or understand it. There is just a vague presence of the concept of gender Somewhere.",
     "alt": "A flag with the colours: light blue, pink, yellow and blueish purple.",
-    "credit": "https://twitter.com/rabbitdeku/status/1299885784691093510/photo/1"
+    "credit": "https://twitter.com/rabbitdeku/status/1299885784691093510"
   },
   {
     "name": "Chaotigender",
     "description": "Chaotigender is a neurogender exclusively for those with adhd who feel that their adhd directly influences their ability to properly analyze and pinpoint their gender.",
     "alt": "A flag with swirls and spheres in different colours placed in a very chaotic manner.",
-    "credit": "https://transgalaxies.tumblr.com/post/168410185975/new-chaotigender-flag-art-credit-to-kyressin"
+    "credit": "https://transgalaxies.tumblr.com/post/168410185975/new-chaotigender-flag-art-credit-to-kyressin",
   },
   {
     "name": "Chaosgender",
@@ -88,6 +97,16 @@ genders = [
 ?>
 
 <? genders.forEach(function(gender){ ?>
+
+<? if ("cw" in gender) { ?>
+<span class="cw_hidden" role="checkbox" onclick="open_cw(this)" aria-label="Content Warning: <?- gender.cw _?> (click to open, requires javascript)" aria-expanded="false">
+<span class="cw_text">Content Warning: <?- gender.cw _?> (click to open)</span>
+
+<div class="cw_content_hidden" aria-hidden=true>
+<? } ?>
+
+
+
 <div class="gender">
 <img class="gender_image" alt="<?- gender.alt _?>" src="img/gender_flags/<?- gender.name.toLowerCase() _?>.jpg">
 <div class="gender_text">
@@ -101,5 +120,9 @@ genders = [
 
 </div>
 </div>
+<? if ("cw" in gender) { ?>
+</div>
+</span>
+<? } ?>
 <? }); ?>
 
