@@ -66,7 +66,7 @@ genders = [
     "name": "Staticgender",
     "description": "A gender which can best be described as TV static; fuzzy and incomprehensible.",
     "alt": "A flag consisting of different shades of grey, overlayed by pixels of black like TV static.",
-    "credit": "A gender which can best be described as TV static; fuzzy and incomprehensible."
+    "credit": "https://pride-color-schemes.tumblr.com/post/148309383964/staticgender"
   },
   {
     "name": "Fluffgender",
