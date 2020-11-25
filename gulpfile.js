@@ -10,7 +10,6 @@ gulp.task('html', () =>
         .markdown()
         .permalink()
         .ejs()
-        //.urls()
         .inline({dest: true})
         .dest()
 );

@@ -31,20 +31,12 @@ class HtmlFork extends TaskFork {
         return this.exec('ejs', options);
     }
 
-    urls(options = {}) {
-        return this.exec('urls', options);
-    }
-
     navigation(options) {
         return this.exec('navigation', options);
     }
 
     inline(options) {
         return this.exec('inline', options);
-    }
-
-    cheerio(options) {
-        return this.exec('cheerio', options);
     }
 }
 

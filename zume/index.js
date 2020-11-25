@@ -1,4 +1,3 @@
-const BrowserSync = require('browser-sync');
 const path = require('path');
 const url = require('url');
 const gulp = require('gulp');
@@ -48,7 +47,6 @@ class Zume {
         this.config.server.watchOptions.cwd = this.paths.cwd;
         this.config.server.server = this.paths.dest;
         this.paths.dest = path.join(this.paths.dest, this.paths.path);
-        this.sync = BrowserSync.create();
     }
 
     gulp() {
@@ -76,14 +74,6 @@ class Zume {
 
     fullUrl() {
         return this.paths.baseUrl + this.url.apply(this, arguments);
-    }
-
-    serve() {
-        this.sync.init(this.config.server);
-
-        Object.keys(this.tasks).forEach(name =>
-            this.watch(this.tasks[name].watch, name)
-        );
     }
 
     watch(paths, ...task) {

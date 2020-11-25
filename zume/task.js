@@ -114,10 +114,6 @@ class Task {
             this.pipe(this.zume.gulp().dest(dir));
 
             this.stream.on('end', () => {
-                if (this.reload) {
-                    this.zume.sync.reload(this.reload);
-                }
-
                 resolve();
             });
         });
