@@ -5,17 +5,17 @@ template: default.ejs
 
 # Kitteh's Site
 
-Hi! My name is Kitteh!
+Welcome to Kitteh's site.
 
-I am a 17 year old thing that does not the gender but likes programming, cooking, hardware and more.
+It is a 17 year old creature that does not have any sort of normal gender.
 
-My pronouns are It/Its and Rawr/Rawrz
+It does programming, cooking, hardware and more.
 
-My favorite programming language to use is Zig.
+It's pronouns are It/Its and Rawr/Rawrz
 
-[My current music playlist (YouTube)](https://www.youtube.com/playlist?list=PLQ-CjWpxgt21v1mhI6CDNM_E4_ttun-rS)
+It usually does programming in Go, Vala or Python.
 
-[My current music playlist (Spotify)](https://open.spotify.com/playlist/4fa8ojSGz5fOAxMp0uRs1s)
+It runs a AS for networking shenanigans over at [AS212342](https://as212342.net)
 
 ## Contact Me
 These are in order of whats the most convenient for me.
@@ -23,7 +23,6 @@ These are in order of whats the most convenient for me.
 - Telegram: [@purringChaos](https://t.me/purringChaos)
 - Twitter: [@purringChaos](https://twitter.com/purringChaos)
 - Discord: purringChaos#7398
-- Fediverse: [@purringChaos@is-a.owo.monster](https://is-a.owo.monster/@purringChaos">@purringChaos@is-a.owo.monster)
 - Email: [me@kitteh.pw](mailto:me@kitteh.pw)
 
 
