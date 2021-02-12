@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "gulp",
-    "server": "gulp server"
+    "push": "gulp && git add . && git commit -m update && git push"
   },
   "author": "Kitteh",
   "devDependencies": {

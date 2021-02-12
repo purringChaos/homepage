@@ -76,14 +76,6 @@ class Zume {
         return this.paths.baseUrl + this.url.apply(this, arguments);
     }
 
-    watch(paths, ...task) {
-        gulp.watch(
-            paths,
-            this.config.server.watchOptions,
-            gulp.series(...task)
-        );
-    }
-
     clear(dir = '') {
         if (!Array.isArray(dir)) {
             dir = [dir];

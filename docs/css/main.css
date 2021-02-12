@@ -595,3 +595,6 @@ a {
   cursor: pointer;
   pointer-events: none;
   display: none; }
+
+.emoji-copy-box {
+  font-size: 72px; }
