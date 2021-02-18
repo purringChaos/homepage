@@ -3,7 +3,7 @@ const TaskFork = require('./task-fork');
 const merge = require('merge-options');
 const path = require('path');
 const defaults = {
-    src: 'data',
+    src: 'pages',
     pattern: '**/*.md'
 };
 
