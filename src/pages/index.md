@@ -17,6 +17,8 @@ It usually does programming in Go, Vala or Python.
 
 It runs a AS for networking shenanigans over at [AS212342](https://as212342.net)
 
+You can find out how to donate to us [here](/donate.html)
+
 ## Contact Me
 These are in order of whats the most convenient for me.
 
