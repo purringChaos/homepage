@@ -51,7 +51,7 @@ function renderError(error, extra) {
         ejs.render(`
 <html>
     <head>
-        <title>Zume error</title>
+        <title>sitegen error</title>
         <style>
             body { font-family: sans-serif; }
             h1 { color: red; }

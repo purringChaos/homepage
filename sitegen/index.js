@@ -24,9 +24,9 @@ const defaults = {
     }
 };
 
-class Zume {
+class sitegen {
     static create(config) {
-        return new Zume(config);
+        return new sitegen(config);
     }
 
     constructor(config = {}) {
@@ -106,7 +106,7 @@ class Zume {
     }
 }
 
-module.exports = Zume;
+module.exports = sitegen;
 
 function initTask(sitegen, Task, defaults, options = {}) {
     const task = new Task(sitegen, merge(defaults, options));
