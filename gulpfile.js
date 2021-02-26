@@ -1,10 +1,10 @@
-const zume = require('./zume').create({dest: "docs"});
-const gulp = zume.gulp();
+const sitegen = require('./sitegen').create({dest: "docs"});
+const gulp = sitegen.gulp();
 
-gulp.task('clear', () => zume.clear());
+gulp.task('clear', () => sitegen.clear());
 
 gulp.task('html', () => 
-    zume.html()
+    sitegen.html()
         .frontMatter()
         .ejsmd()
         .markdown()
@@ -14,9 +14,9 @@ gulp.task('html', () =>
         .dest()
 );
 
-gulp.task('css', () => zume.css().sass().dest());
-gulp.task('img', () => zume.img().dest());
-gulp.task('files', () => zume.files({src: 'files'}).dest());
+gulp.task('css', () => sitegen.css().sass().dest());
+gulp.task('img', () => sitegen.img().dest());
+gulp.task('files', () => sitegen.files({src: 'files'}).dest());
 
 gulp.task('default', gulp.series('clear', 'css', 'img', 'files', 'html'));
-gulp.task('server', gulp.series('default', () => zume.serve()));
+gulp.task('server', gulp.series('default', () => sitegen.serve()));

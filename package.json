@@ -27,5 +27,8 @@
     "markdown-it-container": "latest",
     "markdown-it-html5-media": "latest",
     "merge-options": "latest"
+  },
+  "dependencies": {
+    "dependency-cruiser": "^9.23.2"
   }
 }

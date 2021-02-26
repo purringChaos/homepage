@@ -6,8 +6,8 @@ const defaults = {
 };
 
 class Files extends Task {
-    constructor(zume, options) {
-        super(zume, merge(defaults, options));
+    constructor(sitegen, options) {
+        super(sitegen, merge(defaults, options));
     }
 }
 

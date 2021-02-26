@@ -41,8 +41,8 @@ class HtmlFork extends TaskFork {
 }
 
 class Html extends Task {
-    constructor(zume, options) {
-        super(zume, merge(defaults, options));
+    constructor(sitegen, options) {
+        super(sitegen, merge(defaults, options));
     }
 
     fork(fn) {
@@ -51,7 +51,7 @@ class Html extends Task {
 
     add(options = {}) {
         options.incremental = false;
-        return new HtmlFork(this.zume.html(options), this);
+        return new HtmlFork(this.sitegen.html(options), this);
     }
 
     yaml(options) {
@@ -71,25 +71,25 @@ class Html extends Task {
     }
 
     ejs(options = {}) {
-        options.root = this.zume.src('templates');
+        options.root = this.sitegen.src('templates');
         options.locals = options.locals || {};
-        options.locals.zume = this.zume;
+        options.locals.sitegen = this.sitegen;
 
-        this.watch.push(this.zume.src('templates/**/*.ejs'));
+        this.watch.push(this.sitegen.src('templates/**/*.ejs'));
 
         return this.pipe(require('./plugins/ejs')(options));
     }
 
     ejsmd(options = {}) {
-        options.root = this.zume.src('templates');
+        options.root = this.sitegen.src('templates');
         options.locals = options.locals || {};
-        options.locals.zume = this.zume;
+        options.locals.sitegen = this.sitegen;
 
         return this.pipe(require('./plugins/ejsmd')(options));
     }
 
     urls(options = {}) {
-        options.zume = this.zume;
+        options.sitegen = this.sitegen;
 
         return this.pipe(require('./plugins/urls')(options));
     }
@@ -101,9 +101,9 @@ class Html extends Task {
     inline(options = {}) {
         if (!options.rootpath) {
             if (options.dest) {
-                options.rootpath = this.zume.dest();
+                options.rootpath = this.sitegen.dest();
             } else {
-                options.rootpath = this.zume.src();
+                options.rootpath = this.sitegen.src();
             }
         }
 

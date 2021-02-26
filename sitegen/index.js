@@ -108,9 +108,9 @@ class Zume {
 
 module.exports = Zume;
 
-function initTask(zume, Task, defaults, options = {}) {
-    const task = new Task(zume, merge(defaults, options));
-    zume.tasks[task.options.task] = task;
+function initTask(sitegen, Task, defaults, options = {}) {
+    const task = new Task(sitegen, merge(defaults, options));
+    sitegen.tasks[task.options.task] = task;
 
     return task.src();
 }

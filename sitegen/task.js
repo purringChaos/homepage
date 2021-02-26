@@ -7,8 +7,8 @@ const defaults = {
 };
 
 class Task {
-    constructor(zume, options = {}) {
-        this.zume = zume;
+    constructor(sitegen, options = {}) {
+        this.sitegen = sitegen;
         this.options = merge(
             defaults,
             { watchPattern: options.pattern },
@@ -19,12 +19,12 @@ class Task {
 
         if (this.options.src) {
             if (!path.isAbsolute(this.options.src)) {
-                this.options.src = this.zume.src(this.options.src);
+                this.options.src = this.sitegen.src(this.options.src);
             }
 
             this.cwd = path.join(this.options.src, this.options.base);
         } else {
-            this.cwd = this.zume.src(this.options.base);
+            this.cwd = this.sitegen.src(this.options.base);
         }
     }
 
@@ -42,10 +42,10 @@ class Task {
             src = path.join(this.cwd, this.options.pattern);
         }
 
-        this.stream = this.zume.gulp().src(src, {
+        this.stream = this.sitegen.gulp().src(src, {
             base: this.cwd,
             since: this.options.incremental
-                ? this.zume.gulp().lastRun(this.options.task)
+                ? this.sitegen.gulp().lastRun(this.options.task)
                 : undefined
         });
 
@@ -100,18 +100,18 @@ class Task {
 
     add(options = {}) {
         options.incremental = false;
-        return new TaskFork(this.zume.html(options), this);
+        return new TaskFork(this.sitegen.html(options), this);
     }
 
     dest(dir) {
         if (!dir || !path.isAbsolute(dir)) {
-            dir = this.zume.dest(dir || this.options.base);
+            dir = this.sitegen.dest(dir || this.options.base);
         } else {
             dir = path.join(dir, this.options.base);
         }
 
         return new Promise((resolve, reject) => {
-            this.pipe(this.zume.gulp().dest(dir));
+            this.pipe(this.sitegen.gulp().dest(dir));
 
             this.stream.on('end', () => {
                 resolve();

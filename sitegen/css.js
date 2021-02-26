@@ -1,6 +1,5 @@
 const Task = require('./task');
 const TaskFork = require('./task-fork');
-const merge = require('merge-options');
 const defaults = {
     base: 'css',
     watchPattern: '**/*.scss',
@@ -14,22 +13,12 @@ class CssFork extends TaskFork {
 }
 
 class Css extends Task {
-    constructor(zume, options) {
-        super(zume, merge(defaults, options));
-        this.reload = '*.scss';
-    }
-
-    fork(fn) {
-        return new CssFork(this, fn);
-    }
-
-    add(options = {}) {
-        options.incremental = false;
-        return new CssFork(this.zume.css(options), this);
+    constructor(sitegen, options) {
+        super(sitegen, defaults);
     }
     sass(options) {
         options = options || {};
-        options.zume = this.zume;
+        options.sitegen = this.sitegen;
         return this.pipe(require('./plugins/sass')(options));
     }
 }
