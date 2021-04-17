@@ -12,21 +12,21 @@
   },
   "author": "Kitteh",
   "devDependencies": {
-    "gulp": "latest",
-    "sass": "latest",
-    "gulp-sass": "latest",
     "cssnano": "latest",
     "del": "latest",
     "ejs": "latest",
     "ejs-lint": "latest",
     "front-matter": "latest",
+    "gulp": "latest",
+    "gulp-sass": "latest",
     "highlight.js": "latest",
     "inline-source": "latest",
     "markdown-it": "latest",
     "markdown-it-attrs": "latest",
     "markdown-it-container": "latest",
     "markdown-it-html5-media": "latest",
-    "merge-options": "latest"
+    "merge-options": "latest",
+    "sass": "latest"
   },
   "dependencies": {
     "dependency-cruiser": "^9.23.2"

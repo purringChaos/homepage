@@ -75,12 +75,6 @@ genders = [
     "credit": "https://insaneishfurry.tumblr.com/post/187402721354/fluffgender"
   },
   {
-    "name": "Smolgender",
-    "description": "A feeling of smallness.",
-    "alt": "A flag with the colours of: pink, blue and green.",
-    "credit": "https://heterosexualisnotadefault.tumblr.com/post/161565737929/queerheadcanonoftheday-is-a-sweetheart-and-got"
-  },
-  {
     "name": "Autigender",
     "description": "A gender which can only be understood in the context of being autistic.",
     "alt": "A flag with a light green to dark green gradient background. The infinity symbol overlayed.",
