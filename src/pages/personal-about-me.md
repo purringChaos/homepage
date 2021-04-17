@@ -51,12 +51,6 @@ genders = [
     "credit": "https://nebularomantic.tumblr.com/post/181148032634/new-term-endergender-a-subsect-of-gamegender-that"
   },
   {
-    "name": "Plushgender",
-    "description": "A gender that feels related to a stuffed animal, or for feelings of stuffed animal kin.",
-    "alt": "A striped gradient going from soft brown to white.",
-    "credit": "https://variant-archive.tumblr.com/post/186676258922/honestly-ive-been-searching-for-it-and-i-cant"
-  },
-  {
     "name": "Scenecoric",
     "description": "A xenogender related to scenecore.",
     "alt": "A flag with shades of blue, green, yellow, white, pink, purple and black.",
